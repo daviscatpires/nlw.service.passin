@@ -29,6 +29,6 @@ jobs:
                     username: ${{ secrets.DOCKERHUB_USERNAME }}
                     password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-                -   name: Push image
-                    run: |
-                        docker push daviscatpires/nlw.service.passin:${{ steps.generate_sha.outputs.sha }}
+            -   name: Push image
+                run: |
+                    docker push daviscatpires/nlw.service.passin:${{ steps.generate_sha.outputs.sha }}
