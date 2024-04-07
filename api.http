@@ -1,0 +1,34 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+    "title": "bfs55",
+    "details": null,
+    "maximumAttendees": 1
+}
+
+###
+
+POST http://localhost:3333/events/9e9bd979-9d10-4915-b339-3786b1634f33/attendees
+Content-Type: application/json
+
+{
+    "name": "Davi Pires",
+    "email": "daviscatpires8@gmail.com.br"
+}
+
+###
+
+GET http://localhost:3333/events/15e3254a-af74-408a-a43a-83844c0684e1
+
+###
+
+GET http://localhost:3333/attendees/2/badge
+
+###
+
+GET http://localhost:3333/attendees/3/check-in
+
+###
+
+GET http://localhost:3333/events/9e9bd979-9d10-4915-b339-3786b1634f33/attendees?query=davi
